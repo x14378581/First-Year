@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title> Login/Register </title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		
+								<script src="http://maps.googleapis.com/maps/api/js">
+		</script>
+			
+	
+
+<script>
+	function validateEmail()
+	{
+	   var emailID = document.myForm.EMail.value;
+	   atpos = emailID.indexOf("@");
+	   dotpos = emailID.lastIndexOf(".");
+	   if (atpos < 1 || ( dotpos - atpos < 2 )) 
+	   {
+		   alert("Please enter a correct email")
+		   document.myForm.EMail.focus() ;
+		   return false;
+	   }
+	   return( true );
+	}
+	
+				function validate()
+	 {
+	   if( document.myForm.fname.value == "" )
+	   {
+		 alert("You must provide your Surname!");
+		 document.myForm.fname.focus();
+		 return false;
+	   }
+			else if(document.myForm.fname.value.length < 2){
+			alert("You must provide a Surname which is more than 2 characters");
+			document.myForm.fname.focus();
+			return false;
+	   
+	   }
+		  if( document.myForm.sname.value == "" )
+	   {
+		 alert( "You must provide your Forename!" );
+		 document.myForm.sname.focus() ;
+		 return false;
+	   } 
+			 else if(document.myForm.sname.value.length < 2){
+			alert("You must provide a Forename which is more than 2 characters");
+			document.myForm.fname.focus();
+			return false;
+	   }
+	
+	if( document.myForm.EMail.value == "" )
+   {
+     alert( "Please provide your Email!" );
+     document.myForm.EMail.focus() ;
+     return false;
+   }		
+			else{
+			var ret = validateEmail();
+			if( ret == false )
+				{
+					return false;
+				}
+			}return( true );
+	}
+			</script>
+
+		
+</head>
+
+<body>
+	
+		<div id="wrapper">
+		
+		
+		<div id="header">
+				<div id="headTitle">
+					<h1> NCI Holidays </h1>
+				</div>
+				
+					<a href="../index.html"><img src="../images/logo.jpg"></a>
+					
+					<div id="date"> 
+					<script>
+					var d = new Date();
+					document.getElementById("date").innerHTML = d.toDateString();
+					</script>
+			</div>
+		</div>
+		
+		<div id="menubar">
+			<div id = "Home" ><caption><a href="../index.html"> <p>Home Page</p> </a> </caption> </div>
+			<div id = "LoginRegister" ><caption><a href="Login.html"> <p>Login/Register</p> </a></caption></div>
+			<div id = "HolidayDeals" ><caption> <a href="Deals.html"><p>Holiday Deals</p></a></caption> </div>
+			<div id = "Contact" ><caption> <a href="Contact.html"><p>Contact</p></a></caption> </div>
+		</div>
+		
+		<div id="sidebar">
+			<div id="sidebarList">
+				<p><caption> <a href="Bungalow.html"> Bungalow </a> </caption> </p>
+				<p><caption> <a href="Townhouse.html"> TownHouse </a> </caption>  </p>
+				<p><caption> <a href="Apartment.html"> Apartment </a> </caption>  </p>
+				<p><caption> <a href="BeachHouse.html"> BeachHouse </a> </caption>  </p>
+				<p><caption> <a href="Deals.html"> Holiday Deals </a> </caption> </p>
+				<p><caption> <a href="Contact.html"> Contact </a> </caption> </p>
+			</div>
+				<div id="counter">	
+				<!-- hitwebcounter Code START -->
+				<a href="http://www.hitwebcounter.com/htmltutorial.php" target="_blank">
+				<img src="http://hitwebcounter.com/counter/counter.php?page=5891641&style=0001&nbdigits=5&type=page&initCount=0" title="Free tracking counter" Alt="Free tracking counter"   border="0" >
+				</a><br/>
+				<!-- hitwebcounter.com --><a href="http://www.hitwebcounter.com/" title="Free Web Counters" target="_blank" >
+				</a>   
+				</div>
+		</div>
+		
+		<div id="content">
+		<!--these are the headings of the page-->
+						<h1>My Account</h1>
+					<div id="login">
+						<!--this form will display the code for the Login-->
+							<fieldset>
+								<!--these are the headings of the page-->
+								<h3>Login</h3>
+								<!--the following will display the email address and password for the user to input-->
+								<form>
+								<p>
+								Email/Username:<br><input type="email" name="name" /><br/>
+								Password:<br><input type="password" name="Pwd"/><br/>
+								</p>
+								<!--this will be the button to say forgotten password and will bring you to a new page to make you put in an email and the send it to us-->
+								<button type="button" onclick="alert('Send us an email so you can request a new password and we will send one to you as soon as possible')">Forgotten Password</button>	<br><br/> 
+								<!--the following is the Login button the user will click to log in-->
+								<input type="submit" value="submit"/>
+								</form>
+							</fieldset>
+						
+					</div>
+									
+					<div id="signup">
+						<!--this form will display the code for the sign up-->
+							<fieldset>
+				
+								<!--these are the headings of the page-->
+									<h3>Sign Up</h3>
+								<!--the following will display the code asking for the users forename and surname and a heading name-->
+								<form name="myForm" onsubmit="return (validate());" >
+									<p>Surname:<br><input name="fname" id = "fname" type= "text"/><br/>
+									Forename:<br><input name="sname" id="sname"type="text" /><br/>
+								<!-- The following will have a heading of gender and then a radio button for male and female-->
+									Gender:
+									Male<input type="radio" name="sex" value="male"/>
+									Female<input type="radio" name="sex" value="female"/><br>
+								<!--The following will have a heading of Details and will ask for your email,password twice,date of birth, and then a submit button-->
+									Email:<br><input type="text" name = "EMail" id="EMail"size = "49"/><br/>
+									Password:<br><input type="password" name="pwd"/><br/>
+									Confirm Password:<br><input type="password" name="pwd"/><br/>
+									Enter date of birth:<br><input type="date" name="bday" min="1940-01-02"/><br>
+									<input type="submit" value = "Sign Up"/>	
+									</p>
+									</form>
+								
+							</fieldset>
+		</div>
+		<div id="footer">
+			<div id="flights"><caption><a href="http://www.ryanair.com/ie/"> Flights</a></caption></div>
+			<div id="carRentals"><caption><a href="http://www.holidaycars.com/"> Car Rentals</a></caption></div> 
+			<div id="travelInsurance"><caption><a href="http://www.aviva.ie/online/travel/"> Travel Insurance</a></caption></div> 
+			<div id="touristAttractions"><caption><a href="http://www.discoverireland.ie/"> Tourist Attractions</a></caption></div>
+			
+			<h6> By: Nicole Howell, Caroline Donohue & John Cahill </h6>
+		</div>
+
+	</div>
+
+</body>
+</html>

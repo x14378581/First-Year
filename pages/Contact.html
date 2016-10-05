@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title> Contact Form </title> <!--Title in tab-->
+		<link rel="stylesheet" type="text/css" href="../css/style.css"> <!--Link to the css page-->
+		
+			<script src="http://maps.googleapis.com/maps/api/js"> </script>
+		
+			<script>
+				function initialize()
+				{ <!--Declares and calls the google map-->
+					var mapProp = {
+					center:new google.maps.LatLng(51.508742,-0.120850),
+					zoom:5,
+					mapTypeId:google.maps.MapTypeId.ROADMAP
+					};
+					var map=new google.maps.Map(document.getElementById("googleMapContact"),mapProp);
+				}
+
+				google.maps.event.addDomListener(window, 'load', initialize);
+			</script>
+				<script type="text/javascript">
+function validateEmail() <!--Validation of email.-->
+{
+   var emailID = document.myForm.EMail.value; <!--declares variable and calls the email.-->
+   atpos = emailID.indexOf("@"); <!---->
+   dotpos = emailID.lastIndexOf(".");
+   if (atpos < 1 || ( dotpos - atpos < 2 )) 
+   {
+       alert("Please enter a correct email")<!--alerts the user to correct-->
+       document.myForm.EMail.focus();
+       return false;
+   }
+   return( true );
+}
+function validate() <!--Validation of form-->
+ {
+   if( document.myForm.fname.value == "" ) <!--If input box of fname is empty then it displays a message to the user to fill it-->
+   {
+     alert("You must provide your first name!");
+     document.myForm.fname.focus();
+     return false;
+   }
+		else if(document.myForm.fname.value.length < 2){  <!--If data entered is less than the required length then a message is displayed to the user-->
+		alert("You must provide a first name which is more than 2 characters");
+		document.myForm.fname.focus();
+		return false;
+   
+   }
+      if( document.myForm.sname.value == "" ) <!--If input box of sname is empty then it displays a message to the user to fill it-->
+   {
+     alert( "You must provide your surname!" );
+     document.myForm.sname.focus() ;
+     return false;
+   } 
+		 else if(document.myForm.sname.value.length < 2){ <!--If data entered is less than the required length then a message is displayed to the user-->
+		alert("You must provide a last name which is more than 2 characters");
+		document.myForm.fname.focus();
+		return false;
+   }
+   if( document.myForm.country.value == "-1" ) <!--If dropdown box is set to please choose then it displays a message to choose a country-->
+   {
+     alert( "Please provide your country!" );
+	  document.myForm.country.focus() ;
+     return false;
+   }
+   if( document.myForm.EMail.value == "" ) <!--If input box of email is empty then it displays a message to the user to fill it-->
+   {
+     alert( "Please provide your Email!" );
+     document.myForm.EMail.focus() ;
+     return false;
+   }		
+			else{
+			var ret = validateEmail(); <!--calls the validate email to calculate if it is valid-->
+			if( ret == false )
+				{
+					return false;
+				}
+	if( document.myForm.message.value == "" ){ <!--If input box of message is empty then it displays a message to the user to fill it-->
+     alert( "You must provide your message!" );
+     document.myForm.message.focus() ;
+     return false;
+   } 
+		 else if(document.myForm.message.value.length < 10){ <!--If data entered is less than the required length then a message is displayed to the user-->
+		alert("You must provide a message which is more than 10 characters");
+		document.myForm.message.focus();
+		return false;
+   }
+		alert("Your message was sent, we will get back to you as soon as possible") 
+		<!--Alerts the user that there has been a submission of their message if all fields are entered correctly-->
+	 }
+   return( true );
+   }
+  </script>
+</head>
+
+<body>
+	
+		<div id="wrapper">
+		
+		
+		<div id="header">
+				<div id="headTitle">
+					<h1> NCI Holidays </h1> <!--Header-->
+				</div>
+				    <!--Reference to the logo-->
+					<a href="../index.html"><img src="../images/logo.jpg"></a>
+					
+					<div id="date"> 
+					<script>
+					<!--Declaration and calling of date-->
+					var d = new Date();
+					document.getElementById("date").innerHTML = d.toDateString();
+					</script>
+			</div>
+		</div>
+		
+		<div id="menubar"> <!--Links to other pages on sight-->
+			<div id = "Home" ><caption><a href="../index.html"> <p>Home Page</p> </a> </caption> </div>
+			<div id = "LoginRegister" ><caption><a href="Login.html"> <p>Login/Register</p> </a></caption></div>
+			<div id = "HolidayDeals" ><caption> <a href="Deals.html"><p>Holiday Deals</p></a></caption> </div>
+			<div id = "Contact" ><caption> <a href="Contact.html"><p>Contact</p></a></caption> </div>
+		</div>
+		
+		<div id="sidebar">
+			<div id="sidebarList"> <!--Links to other pages on sight-->
+				<p><caption> <a href="Bungalow.html"> Bungalow </a> </caption> </p>
+				<p><caption> <a href="Townhouse.html"> TownHouse </a> </caption>  </p>
+				<p><caption> <a href="Apartment.html"> Apartment </a> </caption>  </p>
+				<p><caption> <a href="BeachHouse.html"> BeachHouse </a> </caption>  </p>
+				<p><caption> <a href="Deals.html"> Holiday Deals </a> </caption> </p>
+				<p><caption> <a href="Contact.html"> Contact </a> </caption> </p>
+			</div>
+				<div id="counter">	
+				<!-- hitwebcounter Code START -->
+				<a href="http://www.hitwebcounter.com/htmltutorial.php" target="_blank">
+				<img src="http://hitwebcounter.com/counter/counter.php?page=5891641&style=0001&nbdigits=5&type=page&initCount=0" title="Free tracking counter" Alt="Free tracking counter"   border="0" >
+				</a><br/>
+				<!-- hitwebcounter.com --><a href="http://www.hitwebcounter.com/" title="Free Web Counters" target="_blank" >
+				</a>   
+				</div>
+		</div>
+		
+		<div id="content">
+		
+		<div id="headings">
+		
+		<h1>Contact Us</h1>
+		
+		<p>Please contact us with any concerns or questions in terms of the site.</p>
+		</div>	
+		<!--Start of form-->
+				<form name="myForm"  onsubmit="return (validate());" >
+	 <table>
+			<tr>
+				<td> FirstName: </td>
+				<td><input type = "text" name = "fname"  size = "30" /> </td>
+			</tr>
+			
+			<tr>
+				<td> Surname: </td>
+				<td> <input type = "text" name = "sname" size = "30" /></td>
+			</tr>
+			
+			<tr>
+				<td> Country </td>
+				<td> <select name = "country" >
+				<option value = "-1"  selected> Please Select </option>
+				<option value = "1" >Ireland </option>
+				<option value = "2" >UK  </option>
+				<option value = "3" >USA  </option>
+				</select></td></tr>
+				<tr>
+				<td> Email Address: </td>
+				<td> <input type ="email" name = "EMail" size = "49" /></td>
+				</tr>
+				<tr>
+				<td> Message:</td>
+				<td> <textarea rows="5" id="message" cols="50"> </textarea> </td>
+			</tr>
+				<td><input type="submit" value="Submit" /></td>
+			  </table>
+			</form>
+		<!--End of form-->
+		<div id="googleMapContact"></div> <!--placement of map-->
+		</div>
+		
+		<div id="footer"> <!--Links for user to other sites relevant to holidays-->
+			<div id="flights"><caption><a href="http://www.ryanair.com/ie/"> Flights</a></caption></div>
+			<div id="carRentals"><caption><a href="http://www.holidaycars.com/"> Car Rentals</a></caption></div> 
+			<div id="travelInsurance"><caption><a href="http://www.aviva.ie/online/travel/"> Travel Insurance</a></caption></div> 
+			<div id="touristAttractions"><caption><a href="http://www.discoverireland.ie/"> Tourist Attractions</a></caption></div>
+			
+			<h6> By: Nicole Howell, Caroline Donohue & John Cahill </h6>
+		</div>
+
+	</div>
+
+</body>
+</html>

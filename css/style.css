@@ -1,0 +1,467 @@
+
+body{
+
+background-color: black;
+}
+#wrapper {
+					height: 900px;
+					width:	900px;
+					background-color: black;
+					margin: 0 auto;
+}
+
+
+#header{
+					height: 15%;
+					width:	100%;
+					
+					border: 1px solid;
+					border-radius: 20px;
+					
+					margin: 0 auto;
+}
+form{
+		background-color: #FF9966;
+}
+
+#date{
+					float: right;
+					position:relative;
+					left:-3%;
+}
+
+#headTitle {
+					font-family: Tahoma, sans-serif;
+					line-height: 1em;
+					color: #FFB998;
+					font-weight:bold;
+					font-size: 200%;
+					text-shadow:0px 0px 0 rgb(245,153,72),
+								1px 1px 0 rgb(234,142,61),
+								2px 2px 0 rgb(224,132,51),
+								3px 3px 0 rgb(213,121,40),
+								4px 4px 0 rgb(203,111,30),
+								5px 5px 0 rgb(192,100,19),
+								6px 6px 0 rgb(182,90,9),
+								7px 7px 0 rgb(171,79,-2),
+								8px 8px 0 rgb(161,69,-12),
+								9px 9px 0 rgb(150,58,-23),
+								10px 10px 0 rgb(140,48,-33),
+								11px 11px 0 rgb(129,37,-44),
+								12px 12px 0 rgb(119,27,-54),
+								13px 13px 0 rgb(109,17,-64),
+								14px 14px 13px rgba(0,0,0,0.4),
+								14px 14px 1px rgba(0,0,0,0.5),
+								0px 0px 13px rgba(0,0,0,.2);
+					text-align: center;
+					font-style: bold;
+					position: absolute;
+					top: 1%;
+					left: 38%;
+}
+img{
+				border: 1px;
+				border-radius: 20px;
+				width: 20%;
+				height: 100%;
+				
+}
+
+		
+#menubar{
+					height: 6%; 
+					width:	100%;
+					
+					border: 1px solid;
+					border-radius: 20px;
+					background-color: #FF9966;
+					margin: 0 auto;
+}
+					#Home{
+					text-align: center;
+					height: 100%;
+					width:	23%;
+					float: left;
+					display: block;
+				}	#LoginRegister{
+					text-align: center;
+					height: 100%;
+					width:	23%;
+					border: 1% black solid;
+					
+					float: left;
+					display: block;
+				}	#HolidayDeals{
+					text-align: center;
+					height: 100%;
+					width:	23%;
+					border: 1% black solid;
+					
+					float: left;
+					display: block;
+				}	#Contact{
+					text-align: center;
+					height: 100%;
+					width:	23%;
+					border: 1% black solid;
+					
+					float: left;
+					display: block;
+				}
+		
+#sidebar{
+					height: 84%;
+					width:	13%;
+					
+					background-color: #FF9966;
+					float: left;
+					border: 1px solid;
+					border-radius: 20px;
+					overflow:hidden;
+
+}
+
+#sidebarList {
+					z-index:1;
+					position:relative;
+					top: 20%;
+					left: 12%;
+					
+				
+}
+#counter {
+				width: 49%;
+				height:60%;
+				position: relative;
+				bottom:230%;
+				left:2%;
+					
+}
+#content{
+					height: 84%;
+					width:	100%;
+					border: 1px solid;
+					border-radius: 20px;
+					background-color: white;
+					line-height: 24px;
+					margin: 0 auto;
+}
+#content h1 {
+						text-shadow: 5px 5px 5px #FFDC3A;
+}
+#apartmentImage {
+
+}
+#apartmentParagraph {
+						position: relative;
+						right: -24%;	
+}
+
+#button{
+					position: relative;
+					bottom: 50%;
+					
+}
+#calenderTownhouse {
+			position: relative;
+			bottom: -20%;
+			left:3%;
+}
+#calenderBungalow {
+			position: relative;
+			bottom:15%;
+			left: 30%;
+}
+#calenderApartment {
+			position: relative;
+			bottom:-12%;
+			left: 30%;
+}
+}
+#calenderBeachHouse {
+			position: relative;
+			bottom:44%;
+			left: 40%;
+}
+Table{
+    -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+    border-spacing: 0;
+    margin: 2em auto;
+    width: 200px;
+}
+table thead th {
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+    border-radius: 1px;
+
+}
+
+#googleMapApartment {
+					width: 25%;
+					height: 80%;
+					position: relative;
+					bottom: 23%;
+					left: 1%;
+					width: 25%;
+					height: 25%;
+					
+					
+}
+#googleMapBungalow{
+					width: 25%;
+					height: 25%;
+					position: relative;
+					bottom: 45%;
+					right: -15%;
+					
+}
+#googleMapHouse{
+					width: 25%;
+					height: 25%;
+					position: relative;
+					bottom: 10%;
+					right: 50%;
+					
+}
+#googleMapBeachHouse{
+					width: 25%;
+					height: 25%;
+					position: relative;
+					bottom: 55%;
+					right: -15%;
+					
+}
+#beachhouseshow{
+position:relative;
+left:150%;
+padding-left:800px;
+padding-bottom:160px;
+}
+#beachHouseImage{
+						width: 10%;
+						height: 15%;
+}
+#beachhouseParagraph {
+						position: relative;
+						bottom: 20%;
+						right: -25%;		
+
+}
+#listAttractionsBeachHouse {
+						position: relative;
+						bottom: 30%;
+						right: 20%;
+									
+}
+#bungalowParagraph {	
+						padding-left:150px;
+						position: relative;
+						bottom: 20%;
+						right: -22%;
+}
+
+#townHouseParagraph {	
+						position: relative;
+						bottom: 17%;
+						right: -20%;
+}
+#homepageParagraph{
+					width: 70%;
+					padding-left:200px;
+					position:relative;
+					padding-bottom:20px;
+					}
+#linkslist{
+padding-left:300px;				
+}
+#linkline{
+padding-left:200px;
+text-align:left;
+}
+#pagelist{
+padding-left:120px;
+}
+
+#deal1{
+			height:40%;
+			width:40%;
+			
+			position:relative;
+			right:-16%;
+			top:5%;
+			}
+			#deal1pic{
+			height:50%;
+			width:165%;
+			position:relative;
+			
+			}
+			#deal1text{
+			position: relative;
+			bottom:45%;
+			text-align: center;
+			}
+			#deal2{
+			height:40%;
+			width:40%;
+			
+			position:relative;
+			right:-16%;
+			top:10%;
+			}
+			#deal2pic{
+			height:50%;
+			width:165%;
+			position:relative;
+			
+			}
+			#deal2text{
+			text-align:center;
+			position: relative;
+			bottom:45%;
+			
+			}
+			#deal3{
+			height:40%;
+			width:40%;
+			
+			position:relative;
+			right:-57%;
+			bottom:75%;
+			text-align:center;
+			}
+			#deal3pic{
+			height:50%;
+			width:165%;
+			position:relative;
+			
+			}
+			#deal3text{
+			position: relative;
+			bottom:45%;
+			left:15%
+			}
+			#deal4{
+			height:40%;
+			width:40%;
+			
+			position:relative;
+			right:-57%;
+			bottom:70%;
+			}
+			#deal4pic{
+			height:50%;
+			width:165%;
+			position:relative;
+			
+			}
+			#deal4text{
+			position: relative;
+			bottom:45%;
+			left:15%;
+			text-align:center;
+			}
+			#deal1button{
+			position:relative;
+			bottom:126%;
+			left:35%;
+			width:40%;
+			}
+#bungalowshow{
+height:100%;
+width:100%;
+position:relative;
+left:15%;
+}
+#bungalowImage{
+
+width:100%;
+height:20%;
+}
+#townhouseshow{
+height:400%;
+width:420%;
+position:relative;
+left:15%;
+}
+#townhouseImage{
+width:100%;
+height:100%;
+}
+#headings{
+			text-align:center;
+			padding-top:100px;
+			padding-bottom:35px;
+			
+			}
+ul{
+					margin: 0 auto;
+					float: left;
+}
+ol {
+					margin: 0 auto;
+					float: left;
+}
+#button1{
+				padding-right: 100px;
+}
+#button2{
+				padding-right: 100px;
+}
+button {
+					width: 25%;
+					height: 25%;
+					background-color: red;
+					
+}
+#homepageImages {
+					height: 25%;
+					width: 50%;
+					position: absolute;
+					bottom: -40%;
+					left: 33%;
+}
+#footer{
+					height: 6%;
+					width:	100%;
+					
+					border: 1px solid;
+					border-radius: 20px;
+					background-color: #FF9966;
+					float: left;
+					margin: 0 auto;
+}
+					#flights{
+					text-align: center;
+					height: 100%;
+					width:	20%;
+					float: left;
+					display: block;
+				}	#carRentals{
+					text-align: center;
+					height: 100%;
+					width:	20%;
+					border: 1% black solid;
+					float: left;
+					display: block;
+				}	#travelInsurance{
+					text-align: center;
+					height: 100%;
+					width:	20%;
+					border: 1% black solid;
+					float: left;
+					display: block;
+				}	#touristAttractions{
+					text-align: center;
+					height: 100%;
+					width:	20%;
+					border: 1% black solid;
+					float: left;
+					display: block;
+				}

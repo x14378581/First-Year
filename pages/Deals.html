@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title> Holiday Deals </title> <!--Title in tab-->
+		
+		<link rel="stylesheet" type="text/css" href="../css/style.css"> <!--Link to the css page-->
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script><!--Links the jquery-->
+		<script src="http://code.jquery.com/jquery-1.5.min.js"></script><!--Links the jquery-->
+		<script src="http://cdn.wideskyhosting.com/js/jquery.cycle.js"></script><!--Links the jquery-->
+		
+		<script><!--Calls the images and puts them in a continuous cycle for user.-->
+		$("document").ready(function(){
+			$("#deal1pic").cycle()
+		})
+	</script>
+	<script><!--Calls the images and puts them in a continuous cycle for user.-->
+		$("document").ready(function(){
+			$("#deal2pic").cycle()
+		})
+	</script>
+	<script><!--Calls the images and puts them in a continuous cycle for user.-->
+		$("document").ready(function(){
+			$("#deal3pic").cycle()
+		})
+	</script>
+	<script><!--Calls the images and puts them in a continuous cycle for user.-->
+		$("document").ready(function(){
+			$("#deal4pic").cycle()
+		})
+	</script>
+
+</head>
+
+<body>
+	
+		<div id="wrapper">
+		
+		
+		<div id="header">
+				<div id="headTitle">
+					<h1> NCI Holidays </h1> <!--Header-->
+				</div>
+				    <!--Reference to the logo-->
+					<a href="../index.html"><img src="../images/logo.jpg"></a>
+					
+					<div id="date"> 
+					<script>
+					<!--Declaration and calling of date-->
+					var d = new Date();
+					document.getElementById("date").innerHTML = d.toDateString();
+					</script>
+			</div>
+		</div>
+		
+		<div id="menubar"> <!--Links to other pages on sight-->
+			<div id = "Home" ><caption><a href="../index.html"> <p>Home Page</p> </a> </caption> </div>
+			<div id = "LoginRegister" ><caption><a href="Login.html"> <p>Login/Register</p> </a></caption></div>
+			<div id = "HolidayDeals" ><caption> <a href="Deals.html"><p>Holiday Deals</p></a></caption> </div>
+			<div id = "Contact" ><caption> <a href="Contact.html"><p>Contact</p></a></caption> </div>
+		</div>
+		
+		<div id="sidebar">
+			<div id="sidebarList"> <!--Links to other pages on sight-->
+				<p><caption> <a href="Bungalow.html"> Bungalow </a> </caption> </p>
+				<p><caption> <a href="Townhouse.html"> TownHouse </a> </caption>  </p>
+				<p><caption> <a href="Apartment.html"> Apartment </a> </caption>  </p>
+				<p><caption> <a href="BeachHouse.html"> BeachHouse </a> </caption>  </p>
+				<p><caption> <a href="Deals.html"> Holiday Deals </a> </caption> </p>
+				<p><caption> <a href="Contact.html"> Contact </a> </caption> </p>
+			</div>				
+				<div id="counter">	
+				<!-- hitwebcounter Code START -->
+				<a href="http://www.hitwebcounter.com/htmltutorial.php" target="_blank">
+				<img src="http://hitwebcounter.com/counter/counter.php?page=5891641&style=0001&nbdigits=5&type=page&initCount=0" title="Free tracking counter" Alt="Free tracking counter"   border="0" >
+				</a><br/>
+				<!-- hitwebcounter.com --><a href="http://www.hitwebcounter.com/" title="Free Web Counters" target="_blank" >
+				</a>   
+				</div>
+		</div>
+		
+		<div id="content">
+		<h1> Holiday Deals: </h1>
+		
+		<div id="deal1">
+		<div id="deal1pic">
+		<!--Slide Show images-->
+		<img id="Image" src="../images/beachhouse1.jpg"/>
+		<img id="Image" src="../images/beachhouse.jpg"/>
+		<img id="Image" src="../images/beachhouse2.jpg"/>
+		<img id="Image" src="../images/beachhouse3.jpg"/>
+		<img id="Image" src="../images/beachhouse4.jpg"/>		
+		</div>
+				<div id="deal1text">
+		<h3>The Beach house</h3> <!--Start of paragraph that appears on screen to user-->
+		You will be able to get 25% off <br>
+		when you book the holiday home <br>
+		3 months in advance, They will <br>
+		also offer you a starter pack <br>
+		which includes food and laundry
+		<!--End of paragraph that appears on screen to user-->
+		</div>
+		</div>
+		
+		<div id="deal2">
+		<div id="deal2pic">
+		<!--Slide Show images-->
+		<img id="Image2"   src="../images/apartment.jpg"/>
+		<img id="Image2"   src="../images/apartment1.jpg"/>
+		<img id="Image2"   src="../images/apartment2.jpg"/>
+		<img id="Image2"   src="../images/apartment3.jpg"/>
+
+		</div>
+		<div id="deal2text">
+		<h3>The Apartment</h3> <!--Start of paragraph that appears on screen to user-->
+		You will be able to get 50% off <br>
+		when you buy this holiday <br>
+		in the month of December<br>
+		
+		They will also offer you a <br>
+		complimentary bottle of champagne <br>
+		<p> <!--End of paragraph that appears on screen to user-->
+		<a href="Apartment.html"><button id="button" value="submit"> Go to Deal 2 </button></a>
+		<!--Button that will take the user to deal number 2 page-->
+		</p>
+		</div>
+		</div>
+		
+		<div id="deal3">
+		<div id="deal3pic">
+		<!--Slide Show images-->
+		<img id="Image3"  src="../images/townhouse.jpg"/>
+		<img id="Image3"  src="../images/townhouse1.jpg"/>
+		<img id="Image3"  src="../images/townhouse2.jpg"/>
+		<img id="Image3"  src="../images/townhouse3.jpg"/>
+
+		</div>
+		<div id="deal3text">
+		<h3>The Town House</h3> <!--Start of paragraph that appears on screen to user-->
+		If you book a weekend stay in <br>
+		December you will get 30% off  <br>
+		your next stay,They will also <br>
+		offer you a complimentary<br> 
+		bottle of wine 
+		<p> <!--End of paragraph that appears on screen to user-->
+		<a href="Townhouse.html"><button id="button" value="submit"> Go to Deal 3 </button></a>
+		<!--Button that will take the user to deal number 3 page-->
+		</p>
+		</div>
+		</div>
+		
+		<div id="deal4">
+		<div id="deal4pic">
+		<!--Slide Show images-->
+		<img id="Image4"  src="../images/bungalow.jpg"/>
+		<img id="Image4"  src="../images/bungalow1.jpg"/>
+		<img id="Image4"  src="../images/bungalow2.jpg"/>
+		<img id="Image4"  src="../images/bungalow3.jpg"/>
+
+		</div>
+		<div id="deal4text">
+		<h3>The bungalow</h3> <!--Start of paragraph that appears on screen to user-->
+		You will be able to get 10% off <br>
+		when you book the holiday home <br>
+		with this site,They will also <br>
+		offer you a starter pack which <br>
+		includes food and laundry supply's
+		<p> <!--End of paragraph that appears on screen to user-->
+		<a href="Bungalow.html"><button id="button" value="submit"> Go to Deal 4 </button></a> 
+		<!--Button that will take the user to deal number 4 page-->
+		</p>
+		</div>
+		
+		</div>
+		<div id="deal1button">
+		<a href="BeachHouse.html"><button id="button" value="submit"> Go to Deal 1 </button></a>
+		<!--Button that will take the user to deal number 1 page-->
+		</div>
+
+		<div id="footer"> <!--Links for user to other sites relevant to holidays-->
+			<div id="flights"><caption><a href="http://www.ryanair.com/ie/"> Flights</a></caption></div>
+			<div id="carRentals"><caption><a href="http://www.holidaycars.com/"> Car Rentals</a></caption></div> 
+			<div id="travelInsurance"><caption><a href="http://www.aviva.ie/online/travel/"> Travel Insurance</a></caption></div> 
+			<div id="touristAttractions"><caption><a href="http://www.discoverireland.ie/"> Tourist Attractions</a></caption></div>
+			
+			<h6> By: Nicole Howell, Caroline Donohue & John Cahill </h6>
+		</div>
+
+	</div>
+
+</body>
+</html>

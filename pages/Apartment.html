@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title> Apartment </title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/jquery-1.5.min.js"></script>
+	<script src="http://cdn.wideskyhosting.com/js/jquery.cycle.js"></script>
+		<!--this will bring in the map-->
+		<script src="http://maps.googleapis.com/maps/api/js">
+		</script>
+		<!--this will bring in the map-->
+			<script>
+				function initialize()
+				{
+					var mapProp = {
+					center:new google.maps.LatLng(51.508742,-0.120850),
+					zoom:5,
+					mapTypeId:google.maps.MapTypeId.ROADMAP
+					};
+					var map=new google.maps.Map(document.getElementById("googleMapApartment"),mapProp);
+				}
+
+				google.maps.event.addDomListener(window, 'load', initialize);
+			</script>
+<!--this will be the slidshow which u will click on the picture and it will move to the next one-->
+	<script>
+				function changeImage() {
+					var image = document.getElementById('mainimage');
+					if (image.src.match("apartment1")) {
+						image.src = "../images/apartment2.jpg";
+					}
+					else {
+						image.src = "../images/apartment1.jpg";
+						}
+					}
+			</script>
+			<!--this will get the date-->
+			<script>
+					var d = new Date();
+					document.getElementById("date").innerHTML = d.toDateString();
+					</script>
+</head>
+
+<body>
+		<!--this is the wrapper div-->
+		<div id="wrapper">
+		
+		<!--the header div and it holds the headtitle -->
+		<div id="header">
+				<!--this is the headtitle and will hold the title of the page-->
+				<div id="headTitle">
+					<h1> NCI Holidays </h1>
+				</div>
+					<!--this is the logo of the page-->
+					<a href="../index.html"><img src="../images/logo.jpg"></a>
+					<!--this will bring in the date and variable d-->
+					<div id="date"> 
+					
+			</div>
+
+		</div>
+		<!--this is the menubar which will bring you to all pages you will fill things in-->
+		<div id="menubar">
+			<div id = "Home" ><caption><a href="../index.html"> <p>Home Page</p> </a> </caption> </div>
+			<div id = "LoginRegister" ><caption><a href="Login.html"> <p>Login/Register</p> </a></caption></div>
+			<div id = "HolidayDeals" ><caption> <a href="Deals.html"><p>Holiday Deals</p></a></caption> </div>
+			<div id = "Contact" ><caption> <a href="Contact.html"><p>Contact</p></a></caption> </div>
+		</div>
+		<!--this is the sidebar which holds the sidebarlist and counter-->
+		<div id="sidebar">
+			<!--the sidebarlist will link you to all the differnt propertys-->
+			<div id="sidebarList">
+				<p><caption> <a href="Bungalow.html"> Bungalow </a> </caption> </p>
+				<p><caption> <a href="Townhouse.html"> TownHouse </a> </caption>  </p>
+				<p><caption> <a href="Apartment.html"> Apartment </a> </caption>  </p>
+				<p><caption> <a href="BeachHouse.html"> BeachHouse </a> </caption>  </p>
+				<p><caption> <a href="Deals.html"> Holiday Deals </a> </caption> </p>
+				<p><caption> <a href="Contact.html"> Contact </a> </caption> </p>
+			</div>
+				<div id="counter">	
+				<!-- hitwebcounter Code START -->
+				<a href="http://www.hitwebcounter.com/htmltutorial.php" target="_blank">
+				<img src="http://hitwebcounter.com/counter/counter.php?page=5891641&style=0001&nbdigits=5&type=page&initCount=0" title="Free tracking counter" Alt="Free tracking counter"   border="0" >
+				</a><br/>
+				<!-- hitwebcounter.com --><a href="http://www.hitwebcounter.com/" title="Free Web Counters" target="_blank" >
+				</a>   
+				</div>
+		</div>
+		<!--the content will hold the apartmentimage,apartmentparagraph,listattractionsapart,button1,button2,calenderapartment,and googlemapapartment-->
+		
+		<div id="content">
+		<h1> Apartment: </h1>
+		
+			<!--apartmentimage will bring in images for slideshow-->
+			<div id="apartmentImage">
+			<img id="mainimage" onclick="changeImage()" src="../images/apartment2.jpg">
+			
+			</div>
+			<!--apartmentparagraph will describe the apartment-->
+			<div id="apartmentParagraph"> 
+			<h4> Key points about this Apartment: </h4>
+
+						<ol> 		
+							<li>One bedroom</li>
+							<li>One kitchen</li>
+							<li>One sitting room</li>
+						</ol><p> </p>
+						<!--listattractionsapart will describe location-->
+					<div id="listAttractionsApart">
+						<ul>
+							<u> Some popular attractions in Cork would include: </u>
+							<li>Only a five minute walk from beach.Directions will be given at desk.</li>
+							<li>Barrys court castle within driving distance.</li>
+							<li>Plenty of festivals and other activities which you will be showed, at the front desk if you wish</li>
+						</ul>
+					</div>
+			
+				<div id="button1">
+				<button type="button" onclick="alert('Sorry this property is not available to book at this time         **** This site is for Project purposes only ****');">Book this property! </button>
+				</div>
+				<div id="button2">
+				<a href="https://www.paypal.com/ie/webapps/mpp/home"><button type="button">Pay with Paypal! </button></a>
+				</div>
+			</div>
+			<!--this is the calender on the page-->
+			<div id="calenderApartment">
+						<table>
+							<thead>
+								<tr>
+								<th class="arrow"><a href=""></a></th>
+								<th colspan="5">
+									December 2014
+								</th>
+								<th class="arrow"><a href=""></a></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+								<th>Mon</th>
+								<th>Tue</th>
+								<th>Wed</th>
+								<th>Thu</th>
+								<th>Fri</th>
+								<th>Sat</th>
+								<th>Sun</th>
+							</tr>
+							<tr>
+								<td class="off">26</td>
+								<td class="off">27</td>
+								<td class="off">28</td>
+								<td class="off">29</td>
+									<td class="off">30</td>
+								<td>1</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>4</td>
+								<td>5</td>
+								<td>6</td>
+								<td>7</td>
+								<td>8</td>
+								<td>9</td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>11</td>
+								<td>12</td>
+								<td>13</td>
+								<td>14</td>
+								<td>15</td>
+								<td>16</td>
+							</tr>
+							<tr>
+								<td>17</td>
+								<td class="last-week">18</td>
+								<td>19</td>
+								<td>20</td>
+								<td>21</td>
+								<td>22</td>
+								<td>23</td>
+							</tr>
+							<tr>
+								<td>24</td>
+								<td class="today">25</td>
+								<td class="tomorrow">26</td>
+								<td>27</td>
+								<td class="event">28</td>
+								<td>29</td>
+								<td>30</td>
+							</tr>
+							<tr>
+								<td>31</td>
+								<td class="off">1</td>
+								<td class="off">2</td>
+								<td class="off">3</td>
+								<td class="off">4</td>
+								<td class="off">5</td>
+								<td class="off">6</td>
+							</tr>
+						</tbody>
+					</table>
+			</div>
+			<!--this will bring in the map-->
+			<div id="googleMapApartment"></div>
+		</div>
+
+		<!--the footer holding differnt links to pages that could help you with flights and holidays-->
+		<div id="footer">
+			<div id="flights"><caption><a href="http://www.ryanair.com/ie/"> Flights</a></caption></div>
+			<div id="carRentals"><caption><a href="http://www.holidaycars.com/"> Car Rentals</a></caption></div> 
+			<div id="travelInsurance"><caption><a href="http://www.aviva.ie/online/travel/"> Travel Insurance</a></caption></div> 
+			<div id="touristAttractions"><caption><a href="http://www.discoverireland.ie/"> Tourist Attractions</a></caption></div>
+			
+			<h6> By: Nicole Howell, Caroline Donohue & John Cahill </h6>
+		</div>
+
+	</div>
+
+</body>
+</html>

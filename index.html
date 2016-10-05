@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title> Homepage </title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">	
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/jquery-1.5.min.js"></script>
+	<script src="http://cdn.wideskyhosting.com/js/jquery.cycle.js"></script>
+		<script>
+	
+			function fadeAndMove(){
+			
+				$("#header").click(function(){
+				$("#plane").fadeOut("60",function(){
+				//animation complete.
+				});
+				});
+		 
+			
+				$("#document").ready(function(){
+				$("#header").click(function(){
+				$("#move").animate({left:'3000px'});
+				});
+				});	
+			}
+		</script>
+		
+
+</head>
+
+<body onload="fadeAndMove()">
+							<div class="loaderindex"> </div>	
+		<div id="wrapper">
+		
+		
+		<div id="header">
+				<div id="headTitle">
+					<h1> NCI Holidays </h1>
+				</div>
+				
+					<a href="index.html"><img src="images/logo.jpg"></a>
+			<div id="date"> 
+					<script>
+					var d = new Date();
+					document.getElementById("date").innerHTML = d.toDateString();
+					</script>
+			</div>
+	
+		</div>
+		
+		<!-- this is where the code for the menubar accross the top of the website is-->
+		<div id="menubar">
+			<div id = "Home" ><caption><a href="index.html"> <p>Home Page</p> </a> </caption> </div>
+			<div id = "LoginRegister" ><caption><a href="pages/Login.html"> <p>Login/Register</p> </a></caption></div>
+			<div id = "HolidayDeals" ><caption> <a href="pages/Deals.html"><p>Holiday Deals</p></a></caption> </div>
+			<div id = "Contact" ><caption> <a href="pages/Contact.html"><p>Contact</p></a></caption> </div>
+		</div>
+		
+		<!-- this is where the code for the side bar is -->
+		<div id="sidebar">
+			<div id="sidebarList">
+				<p><caption> <a href="pages/Bungalow.html"> Bungalow </a> </caption> </p>
+				<p><caption> <a href="pages/Townhouse.html"> TownHouse </a> </caption>  </p>
+				<p><caption> <a href="pages/Apartment.html"> Apartment </a> </caption>  </p>
+				<p><caption> <a href="pages/BeachHouse.html"> BeachHouse </a> </caption>  </p>
+				<p><caption> <a href="pages/Deals.html"> Holiday Deals </a> </caption> </p>
+				<p><caption> <a href="pages/Contact.html"> Contact </a> </caption> </p>
+			</div>
+
+		</div>
+		
+		<!-- this is where all the code for the main part of the home page is-->
+		<!-- it includes the paragraph and the lists -->
+		<div id="content">
+			<h1> Welcome to NCI Holidays: </h1>
+			<div id="homepageParagraph"><p>
+				NCI Holidays is a user friendly website which is easily navigated. The aim of this website
+				is to make booking a holiday as stress free and easy as possible for the user. NCI Holidays cater to 
+				all users needs when it comes to booking a holiday on-line as we provide all the necessary information 
+				regarding travel.
+				</p>
+				On the site the user should be able to easily find the following:
+				<p> </p>
+				
+				<div id="pagelist">
+				<li> Home page</li>
+				<li> Holiday Deals Page </li>
+				<li> Bungalow Page </li>
+				<li> TownHouse Page </li>
+				<li> Apartment Page </li>
+				<li> BeachHouse Page </li>
+				<li> Holiday Deals Page </li>
+				<li> Contact Page </li>
+				</div>
+				</div>
+				<div id="linkline">
+				Links to various websites for the following: 
+				<p></p>
+				</div>
+				<div id="linkslist">
+					<ol> 
+					<li> Flights </li>
+						<li> Car rentals </li>
+						<li> Travel Insurance </li>
+						<li> Tourist Attractions </li>
+					</ol>
+				</div>
+			<!-- this is the images on the home page-->
+			<div id="homepageImages">
+			<caption><a href="pages/Bungalow.html"><img src="images/bungalow.jpg"></a></caption> 
+			<caption><a href="pages/Townhouse.html"><img src="images/townhouse.jpg"></a></caption>
+			<caption><a href="pages/Apartment.html"><img src="images/apartment.jpg"></a></caption>
+			<caption><a href="pages/BeachHouse.html"><img src="images/beachhouse.jpg"></a></caption>
+			</div>
+			
+		
+		</div>
+		
+		<!-- these are the links in the footer on the home page-->
+		<div id="footer">
+			<div id="flights"><caption><a href="http://www.ryanair.com/ie/"> Flights</a></caption></div>
+			<div id="carRentals"><caption><a href="http://www.holidaycars.com/"> Car Rentals</a></caption></div> 
+			<div id="travelInsurance"><caption><a href="http://www.aviva.ie/online/travel/"> Travel Insurance</a></caption></div> 
+			<div id="touristAttractions"><caption><a href="http://www.discoverireland.ie/"> Tourist Attractions</a></caption></div>
+			
+			<h6> By: Nicole Howell, Caroline Donohue & John Cahill </h6>
+			
+				<div id="counter">	
+				<!-- hitwebcounter Code START -->
+				<a href="http://www.hitwebcounter.com/htmltutorial.php" target="_blank">
+				<img src="http://hitwebcounter.com/counter/counter.php?page=5891641&style=0001&nbdigits=5&type=page&initCount=0" title="Free tracking counter" Alt="Free tracking counter"   border="0" >
+				</a><br/>
+				<!-- hitwebcounter.com --><a href="http://www.hitwebcounter.com/" title="Free Web Counters" target="_blank" >
+				</a>   
+				</div>
+		</div>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title> Town House </title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		
+				
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+						
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script src="http://code.jquery.com/jquery-1.9.1.js"> </script>
+		<script src="http://code.jquery.com/jquery-1.5.min.js"></script>
+		<script src="http://cdn.wideskyhosting.com/js/jquery.cycle.js"></script>
+		
+			<script>
+				function initialize()
+				{
+					var mapProp = {
+					center:new google.maps.LatLng(51.508742,-0.120850),
+					zoom:5,
+					mapTypeId:google.maps.MapTypeId.ROADMAP
+					};
+					var map=new google.maps.Map(document.getElementById("googleMapHouse"),mapProp);
+				}
+
+				google.maps.event.addDomListener(window, 'load', initialize);
+			</script>
+							<script>
+		$("document").ready(function(){
+			$("#townhouseshow").cycle()
+		})
+	</script>
+</head>
+
+<body>
+	
+		<div id="wrapper">
+		
+		
+		<div id="header">
+				<div id="headTitle">
+					<h1> NCI Holidays </h1>
+				</div>
+				
+					<a href="../index.html"><img src="../images/logo.jpg"></a>
+					
+					<div id="date"> 
+					<script>
+					var d = new Date();
+					document.getElementById("date").innerHTML = d.toDateString();
+					</script>
+			</div>
+		</div>
+		
+		<div id="menubar">
+			<div id = "Home" ><caption><a href="../index.html"> <p>Home Page</p> </a> </caption> </div>
+			<div id = "LoginRegister" ><caption><a href="Login.html"> <p>Login/Register</p> </a></caption></div>
+			<div id = "HolidayDeals" ><caption> <a href="Deals.html"><p>Holiday Deals</p></a></caption> </div>
+			<div id = "Contact" ><caption> <a href="Contact.html"><p>Contact</p></a></caption> </div>
+		</div>
+		
+		<div id="sidebar">
+			<div id="sidebarList">
+				<p><caption> <a href="Bungalow.html"> Bungalow </a> </caption> </p>
+				<p><caption> <a href="Townhouse.html"> TownHouse </a> </caption>  </p>
+				<p><caption> <a href="Apartment.html"> Apartment </a> </caption>  </p>
+				<p><caption> <a href="BeachHouse.html"> BeachHouse </a> </caption>  </p>
+				<p><caption> <a href="Deals.html"> Holiday Deals </a> </caption> </p>
+				<p><caption> <a href="Contact.html"> Contact </a> </caption> </p>
+			</div>
+				<div id="counter">	
+				<!-- hitwebcounter Code START -->
+				<a href="http://www.hitwebcounter.com/htmltutorial.php" target="_blank">
+				<img src="http://hitwebcounter.com/counter/counter.php?page=5891641&style=0001&nbdigits=5&type=page&initCount=0" title="Free tracking counter" Alt="Free tracking counter"   border="0" >
+				</a><br/>
+				<!-- hitwebcounter.com --><a href="http://www.hitwebcounter.com/" title="Free Web Counters" target="_blank" >
+				</a>   
+				</div>
+		</div>
+		
+		<div id="content">
+		<h1> Town House: </h1>
+		<div id="townHouseImage">
+		<div id="townhouseshow">
+		<img id="Image4"  src="../images/townhouse.jpg"/>
+		<img id="Image4"  src="../images/townhouse1.jpg"/>
+		<img id="Image4"  src="../images/townhouse2.jpg"/>
+		<img id="Image4"  src="../images/townhouse3.jpg"/>
+		</div>
+			</div>
+			<div id="townHouseParagraph"> 
+			<h4> Key points about this Town House: </h4>
+				<ol>
+						<li> This apartment is located in Co. Cork </li>
+						<li> 3 Bedrooms  </li>
+						<li> 1 Bathroom </li>
+						<li> Sleeps 5 comfortably </li>
+						<li> Self catering </li>
+						<li> 5 minute walk from transport services i.e Bus/Trains </li>
+						<li> Approx 20 min drive from local shops </li>
+						<br />
+							<u> Some popular attractions in cork would include: </u>
+				</ol>
+						<ul>
+							<li> Donerale Wildlife Park, located North of Doneraile town in Co. Cork </li>
+							<li> Fota Wildlife Park </li>
+							<li> Blarney Castle </li>
+							<li> Cobh, small town located next to the sea </li>
+							<li> The Old Midleton Distillery </li>
+						</ul>
+						
+				<div id="button1">
+				<button type="button" onclick="alert('Sorry this property is not available to book at this time         **** This site is for Project purposes only ****');">Book this property! </button>
+				</div>
+				<div id="button2">
+				<a href="https://www.paypal.com/ie/webapps/mpp/home"><button type="button">Pay with Paypal! </button></a>
+				</div>
+		</div>
+			<div id="calenderTownhouse">
+					<table>
+							<thead>
+								<tr>
+								<th class="arrow"><a href=""></a></th>
+								<th colspan="5">
+									December 2014
+								</th>
+								<th class="arrow"><a href=""></a></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+								<th>Mon</th>
+								<th>Tue</th>
+								<th>Wed</th>
+								<th>Thu</th>
+								<th>Fri</th>
+								<th>Sat</th>
+								<th>Sun</th>
+							</tr>
+							<tr>
+								<td class="off">26</td>
+								<td class="off">27</td>
+								<td class="off">28</td>
+								<td class="off">29</td>
+									<td class="off">30</td>
+								<td>1</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>4</td>
+								<td>5</td>
+								<td>6</td>
+								<td>7</td>
+								<td>8</td>
+								<td>9</td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>11</td>
+								<td>12</td>
+								<td>13</td>
+								<td>14</td>
+								<td>15</td>
+								<td>16</td>
+							</tr>
+							<tr>
+								<td>17</td>
+								<td class="last-week">18</td>
+								<td>19</td>
+								<td>20</td>
+								<td>21</td>
+								<td>22</td>
+								<td>23</td>
+							</tr>
+							<tr>
+								<td>24</td>
+								<td class="today">25</td>
+								<td class="tomorrow">26</td>
+								<td>27</td>
+								<td class="event">28</td>
+								<td>29</td>
+								<td>30</td>
+							</tr>
+							<tr>
+								<td>31</td>
+								<td class="off">1</td>
+								<td class="off">2</td>
+								<td class="off">3</td>
+								<td class="off">4</td>
+								<td class="off">5</td>
+								<td class="off">6</td>
+							</tr>
+						</tbody>
+					</table>
+			</div>
+			<div id="googleMapHouse"></div>
+		</div>
+			<div id="footer">
+			<div id="flights"><caption><a href="http://www.ryanair.com/ie/"> Flights</a></caption></div>
+			<div id="carRentals"><caption><a href="http://www.holidaycars.com/"> Car Rentals</a></caption></div> 
+			<div id="travelInsurance"><caption><a href="http://www.aviva.ie/online/travel/"> Travel Insurance</a></caption></div> 
+			<div id="touristAttractions"><caption><a href="http://www.discoverireland.ie/"> Tourist Attractions</a></caption></div>
+			
+			<h6> By: Nicole Howell, Caroline Donohue & John Cahill </h6>
+			</div>
+	
+</div>
+</body>
+</html>
